@@ -1,19 +1,20 @@
 # theganeshsah-Railway_Management_System
 
-#### Database Connection and Setup : 
+### Database Connection and Setup : 
 
 The system first establishes a connection to a MySQL database and pyton using 
 (
 import mysql.connector
-###### Establish a connection to the MySQL database
+##### Establish a connection to the MySQL database
 con = mysql.connector.connect(
     host="localhost",
     user="yourusername",
     password="yourpassword"
 )
-###### Create a cursor object
+##### Create a cursor object
 c = con.cursor()
 ).
+
 after that create a database myrailway, if database exist then use it otherwise 
 If the required database, named myrailway, doesn't exist, the system creates it. The database contains several key tables:
 
@@ -54,16 +55,16 @@ The command-line interface is simple and intuitive, guiding users through each o
 
 ### In this project several SQL-related functions and methods are used to interact with the MySQL database.:
 
-###### cursor()
+##### cursor()
 It acts as a pointer that helps you interact with the database, execute commands, and retrieve data.
 
-###### execute(sql_query, params=None)
+##### execute(sql_query, params=None)
 To run SQL commands, such as SELECT, INSERT, UPDATE, DELETE, etc.
 
-###### fetchall()
+##### fetchall()
 To retrieve and store all rows returned by a SQL query.
 
-###### commit()
+##### commit()
 To finalize database transactions, ensuring that changes are saved permanently
 
 ###### close()
