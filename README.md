@@ -67,7 +67,7 @@ To retrieve and store all rows returned by a SQL query.
 ##### commit()
 To finalize database transactions, ensuring that changes are saved permanently
 
-###### close()
+##### close()
 To properly close the connection to the database, avoiding potential issues like memory leaks or locked resources.
 
 
